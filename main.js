@@ -11,7 +11,7 @@ console.log("Am I a student?", isStudent);
 console.log("Favorite colors:", favoriteColors);
 console.log("Today's date:", todayDate);
 
-// operation declaration
+// operation
 let ageDays = myAge * 365;
 let ageHours = myAge * 365 * 24;
 let year100 = 2026 + (100 - myAge);
