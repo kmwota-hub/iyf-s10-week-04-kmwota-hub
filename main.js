@@ -11,4 +11,3 @@ console.log("My age is:", Age);
 console.log("Am I a student:", isStudent);
 console.log("My favourite colours are:", favouritecolours);
 console.log("Today's date is:", today);
-alert("Hello!");
