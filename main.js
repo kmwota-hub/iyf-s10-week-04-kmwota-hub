@@ -1,72 +1,53 @@
-// variables declaration
-let myName = "Shadrack Mwota";
-let myAge = 22;
+
+// Variable Declaration
+let name = "Shadrack Mwota";
+let age = 22;
 let isStudent = true;
-let favoriteColors = ["red", "blue", "green"];
-let todayDate = new Date();
+let favouritecolours = ["blue","red","green"];
+let today = new Date();
 
-console.log("My name is:", myName);
-console.log("My age is:", myAge);
-console.log("Am I a student?", isStudent);
-console.log("Favorite colors:", favoriteColors);
-console.log("Today's date:", todayDate);
+// Console Output
+console.log("My name is:", name);
+console.log("My age is:", age);
+console.log("Am I a student:", isStudent);
+console.log("My favourite colours are:", favouritecolours);
+console.log("Today's date is:", today);
 
-// operation
-let ageDays = myAge * 365;
-let ageHours = myAge * 365 * 24;
-let year100 = 2026 + (100 - myAge);
+// Variable Declaration
+let ageInDays = age * 365;
+let ageInHours = ageInDays * 24;
+let currentYear = new Date().getFullYear();
+let yearAt100 = currentYear + (100 - age)
 
-console.log("Age in days:", ageDays);
-console.log("Age in hours:", ageHours);
-console.log("Year I turn 100:", year100);
+// console
+console.log("Age in days:", (ageInDays))
+console.log("Age in hours:", (ageInHours))
+console.log("Year At 100:", (yearAt100))
 
+
+// Functions
 function calculateArea(width, height) {
-return width * height;
+    return width * height;
 }
 
 function celsiusToFahrenheit(celsius) {
-return (celsius * 9/5) + 32;
+    return (celsius * 5/9) + 32;
 }
 
 function isEven(number) {
-return number % 2 === 0;
+    return (number % 2 === 0);
 }
 
 function getInitials(fullName) {
-let names = fullName.split(" ");
-return names[0][0] + names[1][0];
+    const parts = fullName.split(" ");
+    let initials = "";
+
+    for(let part of parts) {
+        initials += parts[0].toUperCase();
+    }
+    return initials;
 }
 
 function reverseString(str) {
-return str.split("").reverse().join("");
+    return str.split("").reverse().join("");
 }
-
-function calculateTip(bill, tipPercent = 15) {
-return bill * (tipPercent / 100);
-}
-
-function calculateArea(width, height) {
-return width * height;
-}
-
-function celsiusToFahrenheit(celsius) {
-return (celsius * 9/5) + 32;
-}
-
-function isEven(number) {
-return number % 2 === 0;
-}
-
-function getInitials(fullName) {
-let names = fullName.split(" ");
-return names[0][0] + names[1][0];
-}
-
-function reverseString(str) {
-return str.split("").reverse().join("");
-}
-
-function calculateTip(bill, tipPercent = 15) {
-return bill * (tipPercent / 100);
-}
-
